@@ -1,8 +1,9 @@
 # project-100-days-of-frontend-dev
 
-| Day  | Date       | Topic                                    |
-| ---- | ---------- | ---------------------------------------- |
-| D001 | 2025-05-15 | [Figma Setup](./log/D001-figma-setup.md) |
+| Day  | Date       | Topic                                     |
+| ---- | ---------- | ----------------------------------------- |
+| D001 | 2025-05-15 | [Figma Setup](./log/D001-figma-setup.md)  |
+| D001 | 2025-05-16 | [NextJSSetup](./log/D002-nextjs-setup.md) |
 
 # Log
 
