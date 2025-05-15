@@ -33,12 +33,25 @@ const config = {
 export default config;
 ```
 
-### Step 4 : Import TailwindCSS
+### Step 4 : Import TailwindCSS and Set up the prettier tailwind plugin
 
 Add an `@import` to `./src/app/globals. css` that imports Tailwind CSS.
 
 ```bash
 @import "tailwindcss";
+```
+
+```bash
+npm install -D prettier prettier-plugin-tailwindcss
+```
+
+Create the following file and make it format on save
+
+```js
+// prettier.config.js
+module.exports = {
+  plugins: ["prettier-plugin-tailwindcss"],
+};
 ```
 
 ### Step 5 : Start Build Process
