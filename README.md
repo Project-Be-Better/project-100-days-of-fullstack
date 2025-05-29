@@ -1,4 +1,4 @@
-# project-100-days-of-frontend-dev
+# project-100-days-of-fullstack
 
 | Day  | Date       | Topic                                     |
 | ---- | ---------- | ----------------------------------------- |
