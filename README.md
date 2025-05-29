@@ -3,7 +3,7 @@
 | Day  | Date       | Topic                                     |
 | ---- | ---------- | ----------------------------------------- |
 | D001 | 2025-05-15 | [Figma Setup](./log/D001-figma-setup.md)  |
-| D001 | 2025-05-16 | [NextJSSetup](./log/D002-nextjs-setup.md) |
+| D001 | 2025-05-16 | [NextJS Setup](./log/D002-nextjs-setup.md) |
 
 # Log
 
