@@ -4,51 +4,56 @@ This project sets up a simple load-balanced environment using Docker Compose. It
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 
 .
 ├── Dockerfile          # Node.js app container definition
 ├── docker-compose.yml  # Compose file to run NGINX and three app containers
-├── nginx.conf          # NGINX load balancer configuration
+├── nginx.conf          # NGINX load balancer and reverse proxy configuration
 ├── server.js           # Node.js server
 ├── index.html          # Basic static page for the apps
-└── images/             # Static images (if any)
+├── images/             # Static images (if any)
+└── nginx-certs/        # SSL certificates for HTTPS (optional for dev)
 
 ```
 
 ---
 
-## 🚀 How It Works
+## How It Works
 
 - Three Node.js applications (`app1`, `app2`, `app3`) are built from the same `Dockerfile` and run on port 3000.
-- NGINX listens on port 80 and uses a round-robin load-balancing strategy to distribute incoming requests across these apps.
-- Requests to `http://localhost` are proxied to one of the Node.js apps in the cluster.
+- NGINX acts as both a reverse proxy and load balancer.
+- It listens on port 80 (HTTP) and port 443 (HTTPS), distributing incoming requests across the Node.js apps using a load-balancing strategy (`least_conn` for load balancing based on active connections).
+- Requests to `http://localhost` or `https://localhost` are forwarded to one of the Node.js apps in the cluster.
 
 ---
 
-## ⚙️ Usage
+## Usage
 
-1️⃣ **Build and Start the Services**
+1. Build and start the services:
 
 ```bash
 docker-compose up --build
 ```
 
-2️⃣ **Access the Load Balancer**
+2. Access the load balancer:
 
-Open your browser and go to:
-
-```
-http://localhost
-```
+- HTTP: `http://localhost`
+- HTTPS (self-signed, local dev only): `https://localhost`
 
 You should see responses from different Node.js apps, verifying that NGINX is load balancing traffic among them.
 
 ---
 
-## 🔧 Key Configuration
+SSL
+![](./img/ssl.png)
+
+Load Balancer
+![](./img/load-balancer.png.png)
+
+## Key Configuration
 
 ### NGINX Configuration (`nginx.conf`)
 
@@ -63,20 +68,31 @@ http {
     include mime.types;
 
     upstream nodejs_cluster {
+        least_conn;
         server app1:3000;
         server app2:3000;
         server app3:3000;
     }
 
     server {
-        listen 80;
+        listen 443 ssl;
         server_name localhost;
+
+        ssl_certificate /etc/nginx/certs/nginx-selfsigned.crt;
+        ssl_certificate_key /etc/nginx/certs/nginx-selfsigned.key;
 
         location / {
             proxy_pass http://nodejs_cluster;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
         }
+    }
+
+    server {
+        listen 80;
+        server_name localhost;
+
+        return 301 https://$host$request_uri;
     }
 }
 ```
@@ -117,8 +133,10 @@ services:
     image: nginx:latest
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx-certs:/etc/nginx/certs:ro
     depends_on:
       - app1
       - app2
@@ -132,13 +150,13 @@ networks:
 
 ---
 
-## 📌 Next Steps (Optional)
+## Next Steps
 
-✅ Add health checks to upstream servers
-✅ Configure HTTPS for secure access
-✅ Customize logs for easier debugging
-✅ Fine-tune load balancing (e.g., sticky sessions, IP hashing)
+- Add health checks to upstream servers for better reliability.
+- Configure production-ready HTTPS certificates (e.g., with Let’s Encrypt).
+- Customize NGINX logs for easier debugging and monitoring.
+- Fine-tune load balancing (e.g., sticky sessions, IP hashing).
 
 ---
 
-**Enjoy load balancing with NGINX and Docker Compose!** 🚀
+This setup provides a solid foundation for learning and using NGINX as a reverse proxy and load balancer for your Node.js apps.
