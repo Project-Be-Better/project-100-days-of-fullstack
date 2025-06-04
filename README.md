@@ -1,9 +1,10 @@
 # project-100-days-of-fullstack
 
-| Day  | Date       | Topic                                     |
-| ---- | ---------- | ----------------------------------------- |
-| D001 | 2025-05-15 | [Figma Setup](./log/D001-figma-setup.md)  |
+| Day  | Date       | Topic                                      |
+| ---- | ---------- | ------------------------------------------ |
+| D001 | 2025-05-15 | [Figma Setup](./log/D001-figma-setup.md)   |
 | D001 | 2025-05-16 | [NextJS Setup](./log/D002-nextjs-setup.md) |
+| D002 | 2025-06-04 | [Nginx](./nginx/basic/README.md)           |
 
 # Log
 
