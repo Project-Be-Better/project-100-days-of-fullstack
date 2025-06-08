@@ -1,0 +1,23 @@
+# Node dependencies
+node_modules
+
+# Output directories
+dist
+build
+
+# Optional: output of tests
+coverage
+
+# OS / Editor / Tooling
+.DS_Store
+.env
+.vscode
+.idea
+
+# Log files
+*.log
+
+# Docker
+*.pid
+*.seed
+docker-compose.override.yml
