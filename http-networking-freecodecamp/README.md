@@ -10,3 +10,9 @@ npm init -y
 npm install --save-dev typescript @types/node
 npx tsc --init
 ```
+
+#### Install vitest
+
+```bash
+npm install --save-dev vitest
+```
