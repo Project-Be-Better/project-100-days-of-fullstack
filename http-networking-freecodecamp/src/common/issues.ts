@@ -15,6 +15,25 @@ export const generateKey = (): string => {
   return result;
 };
 
-export const getIssueData = () => {};
+export const getIssueData = async (): Promise<Issue[]> => {
+  const apiKey = generateKey();
+  const res = await fetch(
+    "https://api.boot.dev/v1/courses_rest_api/learn-http/issues",
+    {
+      method: "GET",
+      mode: "cors",
+      headers: {
+        "X-API-Key": apiKey,
+        "Content-Type": "application/json",
+      },
+    }
+  );
 
-export const logIssues = () => {};
+  return res.json();
+};
+
+export const logIssues = (issues: Issue[]): void => {
+  for (const issue of issues) {
+    console.log(issue.title);
+  }
+};
