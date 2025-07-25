@@ -1,4 +1,4 @@
-import { getIssueData } from "./common/issues";
+import { getIssueData } from "./common/issues.js";
 
 const main = async () => {
   const issues = await getIssueData();
