@@ -10,5 +10,7 @@
 # Log
 
 ## 20250515
-
 Today, I am trying another parallel ambitious project, 100 days of frontend dev, to understand and explore the hows and whats of the frontend developement. By the end of it all, I hope I can chain it together
+
+## 20250725
+I know it has been a leap. A lot of things happened, quite a happening kind of way, in a good way. All for the better. I completed the first semester strong and worked with my company to grant me a sabbatical and thankfulyl they have supported. Since I am learning from all walks of SW developement, I will be remodellig this repo into a log for my learning journals. Including links to my AWS journey. Not sure if failling too many times is a minus, but atleast I am not failing the same things twice, I am failing at new things. I also need to figure out a way to out-ai ai by being innovative and resourceful. I am not a full cup, that is the bad part. The good part is that I am not a full cup and I can take in more. 
