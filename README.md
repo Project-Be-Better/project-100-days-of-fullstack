@@ -7,6 +7,8 @@
 | D002 | 2025-06-04 | [Nginx and its implementation](./nginx/basic/README.md)                                |
 | D003 | 2025-06-08 | [HTTP Networking fundamentals revisited - 1](./http-networking-freecodecamp/README.md) |
 | D004 | 2025-07-25 | [Scalable Architecture - 1 ](./scalable-arch/ww202533.md)                              |
+| D005 | 2025-08-02 | [Amigos Code - Java Fundamentals - 1 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/001-java-fundamentals.md)                              |
+| D006 | 2025-08-03 | [Amigos Code - Java Fundamentals - 2 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/001-java-fundamentals.md)                              |
 
 # Log
 
