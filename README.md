@@ -10,7 +10,7 @@
 | D005 | 2025-08-02 | [Amigos Code - Java Fundamentals - 1 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/001-java-fundamentals.md)                              |
 | D006 | 2025-08-03 | [Amigos Code - Java Fundamentals - 2 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/001-java-fundamentals.md)                              |
 | D006 | 2025-08-03 | [Amigos Code - Java for Developers - 1 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/002-java-for-developers.md)                              |
-| D007 | 2025-08-04 | [Amigos Code - Java for Developers - 1 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/002-java-for-developers.md)                              |
+| D007 | 2025-08-04 | [Amigos Code - Java for Developers - 2 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/002-java-for-developers.md)                              |
 
 # Log
 
