@@ -14,6 +14,8 @@
 | D008 | 2025-08-05 | [Amigos Code - Java for Developers - 3 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/002-java-for-developers.md)                              |
 | D009 | 2025-08-07 | [Amigos Code - Java for Developers - 4 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/002-java-for-developers.md)                              |
 | D009 | 2025-08-07 | [Amigos Code - SQL Introduction - 1 ](https://github.com/Project-Be-Better/learning-sql/blob/main/learning-log/003-amigoscode-SQL-introduction.md)                              |
+| D010 | 2025-08-08 | [Amigos Code - Spring Boot For Beginners - 1 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/003-spring-boot-for-beginners.md)                              |
+| D011 | 2025-08-09 | [Amigos Code - Spring Boot For Beginners - 2 ](https://github.com/Project-Be-Better/learning-java/blob/master/learning-log/003-spring-boot-for-beginners.md)                              |
 
 
 
