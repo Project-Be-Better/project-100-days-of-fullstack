@@ -21,6 +21,7 @@
 | D014 | 2025-08-27 | [Python DSA Prep - 1](https://github.com/Project-Be-Better/learning-python/tree/master/src/chapter-01)                              |
 | D015 | 2025-09-09 | [K8s Introduction - 1](https://github.com/Project-Be-Better/learning-k8s)                         |
 | D016 | 2025-09-10 | [K8s Introduction - 2](https://github.com/Project-Be-Better/learning-k8s)                            |
+| D017 | 2025-09-11 | [K8s Introduction - 3 Full Stack Deployed](https://github.com/Project-Be-Better/learning-k8s/tree/main/01-fullstack)                            |
 
 
 
